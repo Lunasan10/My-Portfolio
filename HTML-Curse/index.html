@@ -7,27 +7,36 @@
         <!-- viewport: Meta tag for responsive design -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>Bl4ackM0oN</title>
+        <title>Bl4ckM0oN</title>
 
         <!--metadata: important information about the page-->
 
         <!-- description: Meta tag for the page's description -->
-        <meta name="description" content="Bl4ackM0oN's portfolio webpage: showcasing experience and passion for learning, creating, and innovating.">
+        <meta name="description" content="Bl4ckM0oN's portfolio webpage: showcasing experience and passion for learning, creating, and innovating.">
         <!-- keywords: Meta tag for the page's keywords -->
-        <meta name="keywords" content="Bl4ackM0oN, personal webpage, System Engineering, student, experience">
+        <meta name="keywords" content="Bl4ckM0oN, personal webpage, System Engineering, student, experience">
         <!-- author: Meta tag for the page's author -->
-        <meta name="author" content="Bl4ackM0oN">
+        <meta name="author" content="Bl4ckM0oN">
         <!-- robots: Meta tag for search engine indexing -->
         <meta name="robots" content="index, follow">
         
         <!-- OPEN GRAPH: Meta tags for social media sharing -->
-        
+        <meta property="og:title" content="Bl4ckM0oN Portfolio">
+        <meta property="og:description" content="Bl4ckM0oN's portfolio webpage: showcasing experience and passion for learning, creating, and innovating.">
+        <meta property="og:image" content="./images/Myself.png">   
+        <meta property="og:image-alt" content="Bl4ckM0oN's profile picture">      
+
 
 
         <!-- link: Element to link external resources, such as stylesheets -->
         
         <!-- icon: Meta tag for the page's icon -->
         <link rel="icon" href="./images/Myself.png" type="image/png">
+
+        <!-- rel=alternate: Link to an alternate version of the page -->
+        <link rel="alternate" href="" hreflang="es">
+        <!-- rel=canonical: Link to the canonical version of the page -->
+        <link rel="canonical" href="">
 
     </head>
     
@@ -36,24 +45,71 @@
             <img
             id="profile-picture"
             src="./images/Myself.png" 
-            alt="Bl4ackM0oN's profile picture" 
-            title="Bl4ackM0oN's profile picture" 
+            alt="Bl4ckM0oN's profile picture" 
+            title="Bl4ckM0oN's profile picture" 
             width="200" 
             height="200"
             />
-            <h1>Bl4ackM0oN</h1>
+            <h1>Bl4ckM0oN</h1>
             <!-- strong:  label for bold text-->
             <p class="description">Student of <strong>System Engineering</strong> of the 5th semester...</p>
             <p class="description">Passionate about learning, creating, and innovating.</p>
         </header>
         
         <main>
-            <h2>Experience</h2>
-            <ul>
-                <!-- em: label for italic text (not how a style), is used for semantic emphasis (most than common text, but less that strong)-->
-                <li><em>Volunteer in University Tutorials</em> - 2025 to 2026</li>
-                <li><em>Project Manager in University Projects</em> - 2026 to present</li>
-            </ul>
+            <section class="about me">
+                <h2>About Me</h2>
+                <p>Hi! I'm Luna Alejandra Sandoval (Bl4ckM0oN), a System Engineering student at the <em>Universidad Distrital Francisco José de Caldas</em>.</p>
+                <p>I'm building strong foundations in programming, system logic, and problem solving, while exploring how intelligent systems and secure infrastructures are designed.</p>
+                
+                <div id="my-goal">
+                    <p>My goal is to develop the technical depth required to understand, build, and secure complex systems.</p>
+                    <p id="inspiration">Learning through consistent study, hands-on projects, and public documentation of my progress.</p>
+                </div>
+
+                <section class="skills-hobbies">
+                    <div id="skills">
+                        <h2>Skills</h2>
+                        <ol>
+                            <li><strong>Programming Languages:</strong> Python, Java</li>
+                            <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+                            <li><strong>Tools:</strong> Git, Docker, Linux</li>
+                            <li><strong>Soft Skills:</strong> Communication, Teamwork, Problem Solving</li>
+                            <li><strong>Languages:</strong> Spanish (native), English (intermediate)</li>
+                        </ol>
+                    </div>
+
+                    <div id="hobbies">
+                        <h2>Hobbies</h2>
+                        <ol>
+                            <li><em>Coding:</em> Building projects and learning new technologies (in continuous development).</li>
+                            <li><em>Music:</em> Listening to a variety of genres and dancing. ALso learning to play the guitara and the piano.</li>
+                            <li><em>Reading:</em> Exploring new books about psychology, philosophy, and fiction.</li>
+                            <li><em>Training:</em> I love to do excersise, especciallly swimming, running and strength training.</li>
+                            <li><em>Art enthusiasm:</em> Exploring different art forms and expressing creativity how painting, writing, drawing and embroidery.</li>
+                        </ol>
+                </section>
+            </section>
+            
+            <section class="education-experience">
+                <div id="education">
+                    <h2>Education</h2>
+                    <ul>
+                        <li><em>High School</em> - Elisa Borrero de Pastrana School (2017-2023)</li>
+                        <li><em>System Engineering</em> - Universidad Distrital Francisco José de Caldas (2024 to present)</li>
+                    </ul>
+                </div>
+                <div id="experience">
+                    <h2>Experience</h2>
+                    <ul>
+                        <!-- em: label for italic text (not how a style), is used for semantic emphasis (most than common text, but less that strong)-->
+                        <li><em>Volunteer in University Tutorials</em> - 2025 to 2026</li>
+                        <li><em>Project Manager in University Projects</em> - 2026 to present</li>
+                    </ul>
+                </div>
+            </section>
+
+            
         </main>
         
         <footer>
