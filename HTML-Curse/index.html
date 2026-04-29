@@ -19,6 +19,8 @@
         <meta name="author" content="Bl4ckM0oN">
         <!-- robots: Meta tag for search engine indexing -->
         <meta name="robots" content="index, follow">
+        <!-- frame-ancestors: Meta tag for Content Security Policy, specifies which sources can embed the page -->
+        <meta http-equiv="Content-Security-Policy" content="frame-antecestors 'none';">
         
         <!-- OPEN GRAPH: Meta tags for social media sharing -->
         <meta property="og:title" content="Bl4ckM0oN Portfolio">
@@ -42,22 +44,30 @@
     
     <body>
         <header>
-            <img
-            id="profile-picture"
-            src="./images/Myself.png" 
-            alt="Portrait of Luna Alejandra Sandoval, also known as Bl4ckM0oN" 
-            title="Bl4ckM0oN's profile picture" 
-            width="200" 
-            height="200"
-            />
+            <a href="./images/Myself.png">
+                <img
+                id="profile-picture"
+                src="./images/Myself.png" 
+                alt="Portrait of Luna Alejandra Sandoval, also known as Bl4ckM0oN" 
+                title="Bl4ckM0oN's profile picture" 
+                width="200" 
+                height="200"
+                />
+            </a>
             <h1>Bl4ckM0oN</h1>
+            <!-- nav: Navigation element -->
+            <nav>
+                <!-- for internal navigation, I need to reference to id -->
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+            </nav>
             <!-- strong:  label for bold text-->
-            <p class="description">Student of <strong>System Engineering</strong> of the 5th semester...</p>
-            <p class="description">Passionate about learning, creating, and innovating.</p>
+            <p>Student of <strong>System Engineering</strong> of the 5th semester...</p>
         </header>
         
         <main>
-            <section class="about-me">
+            <section id="about-me">
                 <h2>About Me</h2>
                 <p>Hi! I'm Luna Alejandra Sandoval (Bl4ckM0oN), a <strong>System Engineering student</strong> at the <em>Universidad Distrital Francisco José de Caldas</em>.</p>
                 <p>I'm building strong foundations in programming, system logic, and problem solving, while exploring how intelligent systems and secure infrastructures are designed.</p>
@@ -103,14 +113,14 @@
             <section class="education-experience">
                 <section id="education">
                     <h2>Education</h2>
-                    <ul>
+                    <ul type="square">
                         <li><em>High School</em> - Elisa Borrero de Pastrana School (2017-2023)</li>
                         <li><em>System Engineering</em> - Universidad Distrital Francisco José de Caldas (2024 to present)</li>
                     </ul>
                 </section>
                 <section id="experience">
                     <h2>Experience</h2>
-                    <ul>
+                    <ul type="square">
                         <!-- em: label for italic text (not how a style), is used for semantic emphasis (most than common text, but less that strong)-->
                         <li><em>Volunteer in University Tutorials</em> - 2025 to 2026</li>
                         <li><em>Project Manager in University Projects</em> - 2026 to present</li>
@@ -118,7 +128,7 @@
                 </section>
             </section>
 
-            <section class="projects">
+            <section id="projects">
                 <h2>Projects</h2>
                 <article>
                     <header>
@@ -131,8 +141,8 @@
                 </article>
             </section>
 
-            <section class="contact">
-                <h2>Contact me</h2>
+            <section id="follow-me">
+                <h2>Follow me</h2>
                 <p>You can reach me through the following channels:</p>
                 <ul>
                     <!-- a: Anchor element for hyperlinks -->
@@ -143,11 +153,116 @@
                     <li><strong>GitHub:</strong> <a rel="noopener noreferrer" target="_blank" href="https://github.com/Lunasan10">github.com/Lunasan10</a></li>
                 </ul>
             </section>
-            
+
+            <section id="frecuently-questions">
+                <h2>Frequently Asked Questions</h2>
+                
+                <details open>
+                    <summary>What programming languages do you know?</summary>
+                    <p>I have experience with Python and Java, and I'm currently learning JavaScript.</p>
+                </details>
+
+                <details>
+                    <summary>What are your career goals?</summary>
+                    <p>My goal is to become a skilled software engineer, specializing in system design and cybersecurity.</p>
+                </details>
+
+                <details>
+                    <summary>How can I contact you?</summary>
+                    <p>You can reach me through the following channels:</p>
+                    <a href="#follow-me">Follow me</a>
+                    <p>Or in the contact form below.</p>
+                    <a href="#contact-me">Contact me</a>
+                </details>
+
+            </section>
         </main>
         
         <footer>
-            <small>&copy; 2026 Bl4ckM0oN. All rights reserved.</small>
+            <section id="contact-me">
+                <h2>Contact me</h2>
+                <!-- form: Element for creating an HTML form -->
+                <form method="post" action="/">
+                    <!-- fieldset: Element for grouping related form elements -->
+                    <fieldset>
+                        <!-- legend: Element for providing a caption for a fieldset -->
+                        <legend>Personal Information:</legend>
+                        
+                        <div>
+                            <label>Name:
+                                <input required type="text" name="name" placeholder="Luna Sandoval">
+                            </label>
+                        </div>
+                        
+                        <div>
+                            <label>Email:
+                                <input required type="email" name="email" placeholder="lunasandoval@gmail.com">
+                            </label>
+                        </div>
+                        
+                        <div>
+                            <label>Message:
+                                <textarea required name="message" placeholder="Write your message here..."></textarea>
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>Telephone:
+                                <input type="tel" name="telephone" placeholder="+57 300 123 4567" pattern="^\+\d{2} \d{3} \d{3} \d{4}$">
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Aditional Information:</legend>                        
+                    
+                        <div>
+                            <label>Why do you want to contact me?
+                                <select name="reason" required>
+                                    <option value="" disabled selected>Select a reason</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="job-opportunity">Job Opportunity</option>
+                                    <option value="general-inquiry">General Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>What form of communication do you prefer?
+                                <select name="communication-preference">
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="email">Email</option>
+                                    <option value="phone">Phone</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <datalist id="languages">
+                            <option value="Python">Python</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Java">Java</option>
+                            <option value="C++">C++</option>
+                        </datalist>
+
+                        <div>
+                            <label>Which programming languages are you interested in?
+                                <input list="languages" name="programming-languages" placeholder="Select or type a language">
+                            </label>
+                        </div>
+                        
+                        <div>
+                            <label>
+                                <input type="checkbox" name="subscribe" value="yes">
+                                Subscribe to my newsletter for updates on my projects and activities.
+                            </label>
+                        </div>
+                        
+                    </fieldset>
+                    <button type="submit">Send Contact Message</button>
+                </form>
+            </section>
+
+            <small> Bl4ckM0oN </small>
         </footer>
     
     </body>

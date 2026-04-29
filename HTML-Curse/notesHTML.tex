@@ -50,3 +50,28 @@
 ### '<em>' vs. '<i>'
 - `<em>` is used to indicate that the text has **emphasis**.
 - `<i>` is used to simply make the text italic without conveying any additional meaning or importance.
+
+### role attribute
+The `role` attribute is used to define the **purpose** of an element in terms of accessibility. It helps assistive technologies understand the function of an element, which can improve the user experience for people with disabilities. For example, `role="navigation"` indicates that the element is a navigation landmark, while `role="button"` indicates that the element functions as a button.
+
+## Interesting elements
+### details and summary
+The `<details>` element is used to create a disclosure widget that can be toggled open or closed by the user. 
+The `<summary>` element is used to provide a summary or caption for the content inside the `<details>` element. When the user clicks on the summary, the details content will be revealed or hidden.
+
+### video
+The `<video>` element is used to embed video content in an HTML document. 
+It provides a standard way to include video files and offers various attributes for controlling playback, such as `controls`, `autoplay`, `loop`, and `muted`. 
+
+### audio
+The `<audio>` element is used to embed audio content in an HTML document.
+It provides a standard way to include audio files and offers various attributes for controlling playback.
+
+##iframe
+The `<iframe>` element is used to embed another HTML document within the current document. 
+It allows you to display content from another source, such as a different webpage, a video, or a map, without leaving the current page. The `src` attribute is used to specify the URL of the content to be embedded.
+
+## Interesting attributes
+### loading='lazy'
+The `loading="lazy"` attribute is used on `<img>` and `<iframe>` elements to enable lazy loading. 
+This means that the browser will defer loading the image or iframe until it is about to enter the viewport, which can improve page load times and reduce bandwidth usage for users who do not scroll all the way down the page.
