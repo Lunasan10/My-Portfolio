@@ -1,4 +1,4 @@
-## Personal Portfolio Website
+# Personal Portfolio Website
 
 This repository contains the source code for my personal portfolio.
 The project is developed in phases, applying concepts in real time to build a solid foundation in web development.
