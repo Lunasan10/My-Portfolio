@@ -88,9 +88,9 @@
                     <section id="skills">
                         <h3>Skills</h3>
                         <ol>
-                            <li><strong>Programming Languages:</strong> Python, Java</li>
+                            <li><strong>Programming Languages:</strong> Python, Java, Go</li>
                             <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
-                            <li><strong>Tools:</strong> Git, Docker, Linux</li>
+                            <li><strong>Tools:</strong> Git, Linux</li>
                             <li><strong>Soft Skills:</strong> Communication, Teamwork, Problem Solving</li>
                             <li><strong>Languages:</strong> Spanish (native), English (intermediate)</li>
                         </ol>
@@ -130,13 +130,65 @@
 
             <section id="projects">
                 <h2>Projects</h2>
-                <article>
+                
+                <article id="proyectOne">
                     <header>
                         <h3>Personal Portfolio Website</h3>
                     </header>
+                    
                     <p>Created a personal portfolio website to showcase my skills, experience, and projects.</p>
+                    <small>Technologies: HTML, CSS, JavaScript</small>
+                    
                     <footer>
-                        <small>Technologies: HTML, CSS, JavaScript</small>
+                        
+                        <dialog id="dialogOne">
+                            <p>This project is a work in progress, and I'm continuously updating it with new content and improvements. Stay tuned for more updates!</p>
+                            <button id="closeDialogOne">Close</button>
+                        </dialog>
+                        <button id="viewDetailsOne">View Details</button>
+                        
+                        <!-- I can use JS in HTML document -->
+                        <script>
+                            // Show Details Button
+                            window.viewDetailsOne.addEventListener('click', () => {
+                                window.dialogOne.showModal();
+                            });
+
+                            // Close Dialog Button
+                            window.closeDialogOne.addEventListener('click', () => {
+                                window.dialogOne.close();
+                            });
+                        </script>
+
+                    </footer>
+                </article>
+
+                <article id="proyectTwo">
+                    <header>
+                        <h3>Competitive Programming</h3>
+                    </header>
+                    
+                    <p>I study competitive programming to improve my problem-solving skills and algorithmic thinking.</p>
+                    <small>Technologies: Python, Java, Go</small>
+                    
+                    <footer>
+                        
+                        <dialog id="dialogTwo">
+                            <p>This project is a work in progress, and I'm continuously updating it with new content and improvements. Stay tuned for more updates!</p>
+                            <button id="close">Close</button>
+                        </dialog>
+                        <button id="viewDetailsTwo">View Details</button>
+                       
+                        <script>
+                            window.viewDetailsTwo.addEventListener('click', () => {
+                                window.dialogTwo.showModal();
+                            });
+
+                            window.close.addEventListener('click', () => {
+                                window.dialogTwo.close();
+                            });
+                        </script>
+
                     </footer>
                 </article>
             </section>
@@ -159,7 +211,7 @@
                 
                 <details open>
                     <summary>What programming languages do you know?</summary>
-                    <p>I have experience with Python and Java, and I'm currently learning JavaScript.</p>
+                    <p>I have experience with Python, Java and Go, and I'm currently learning JavaScript.</p>
                 </details>
 
                 <details>
@@ -241,7 +293,7 @@
                             <option value="Python">Python</option>
                             <option value="JavaScript">JavaScript</option>
                             <option value="Java">Java</option>
-                            <option value="C++">C++</option>
+                            <option value="Go">Go</option>
                         </datalist>
 
                         <div>
