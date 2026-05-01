@@ -1,11 +1,29 @@
-## My Personal Portfolio Website
+## Personal Portfolio Website
 
-This repository contains the source code for my personal portfolio, currently in its first development phase, focused on HTML.
-I’m building this project as I learn, applying concepts in real time to create a solid and well-structured foundation before moving into styling and interactivity.
+This repository contains the source code for my personal portfolio.
+The project is developed in phases, applying concepts in real time to build a solid foundation in web development.
 
-## -> Current Phase: HTML Fundamentals
+The initial HTML structure has been completed, and the project is now evolving into styling and layout implementation using CSS.
+
+---
+
+## Current Phase: CSS Fundamentals
 
 At this stage, the focus is on:
+
+* Layout design (Flexbox & Grid)
+* Responsive design principles
+* Visual hierarchy and spacing
+* Styling components and sections
+* Improving user experience (UX)
+
+This phase transforms the structured HTML into a visually appealing and responsive interface.
+
+---
+
+## Previous Phase: HTML Fundamentals ✅
+
+Completed work includes:
 
 * Semantic HTML structure
 * Accessibility best practices
@@ -13,14 +31,16 @@ At this stage, the focus is on:
 * Proper use of forms and inputs
 * Logical content organization
 
-This phase is all about building the structure of the web before enhancing it with CSS and JavaScript.
+---
 
 ## Roadmap
 
-* Phase 1: HTML structure (current)
-* Phase 2: CSS (layout, responsiveness, design)
-* Phase 3: JavaScript (interactivity and dynamic behavior)
-* Phase 4: Optimization & deployment
+* ✅ Phase 1: HTML structure *(completed)*
+* 🔄 Phase 2: CSS *(current)*
+* ⏳ Phase 3: JavaScript (interactivity and dynamic behavior)
+* ⏳ Phase 4: Optimization & deployment
+
+---
 
 ## Purpose
 
@@ -30,6 +50,10 @@ The goal of this project is to:
 * Build a professional portfolio from scratch
 * Document my progress as I grow as a developer
 
-## Note
+---
+
+## 📌 Note
+
 This project is continuously evolving. Each update reflects new concepts I learn and improvements in my development skills.
-* Last Update: April 26, 2026
+
+**Last Update:** April 30, 2026
