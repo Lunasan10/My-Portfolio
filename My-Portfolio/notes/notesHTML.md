@@ -1,4 +1,4 @@
-#HTML Learning notes
+# HTML Learning notes
 
 ## Normal elements vs. Reemplace elements
 
@@ -38,16 +38,16 @@
 ## Semantic HTML
 **Semantic HTML** refers to the use of HTML elements that convey meaning about the content they contain. These elements help both developers and browsers understand the structure and purpose of the content, improving accessibility and SEO.
 
-### '<span>' vs. '<div>' vs. '<section>'
+### span vs. div vs. section
 - `<span>` is an inline element used to group and style a **portion of text** or other inline elements without affecting the layout.
 - `<div>` is a block-level element used to group and style **larger sections of content**, such as paragraphs, images, or other block-level elements.
 - `<section>` is a semantic block-level element used to group **related content together**, often with a heading, to indicate that the content belongs to a specific section of the page.
 
-### '<strong>' vs. '<b>'
+### strong vs. b
 - `<strong>` is used to indicate that the text is of strong **importance**.
 - `<b>` is used to simply make the text bold without conveying any additional meaning or importance.
 
-### '<em>' vs. '<i>'
+### em vs. i
 - `<em>` is used to indicate that the text has **emphasis**.
 - `<i>` is used to simply make the text italic without conveying any additional meaning or importance.
 
@@ -67,11 +67,11 @@ It provides a standard way to include video files and offers various attributes 
 The `<audio>` element is used to embed audio content in an HTML document.
 It provides a standard way to include audio files and offers various attributes for controlling playback.
 
-##iframe
+### iframe
 The `<iframe>` element is used to embed another HTML document within the current document. 
 It allows you to display content from another source, such as a different webpage, a video, or a map, without leaving the current page. The `src` attribute is used to specify the URL of the content to be embedded.
 
-## dialog
+### dialog
 The `<dialog>` element is used to create a dialog box or modal window in an HTML document.
 It provides a standard way to create interactive dialogs that can be opened and closed by the user.
 
