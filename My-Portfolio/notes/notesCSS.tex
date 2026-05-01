@@ -1,0 +1,32 @@
+#CSS Learning notes
+In CSS the order is important, the last rule will override the previous ones if they have the same specificity, for this reason is named "Cascading Style Sheets".
+
+## Color
+Colors can be defined in several ways, the most common are:
+- Named colors: `red`, `blue`, `green`, etc.
+- Hexadecimal: `#RRGGBB` where RR, GG, and BB are two-digit hexadecimal numbers representing the red, green, and blue components of the color. And, we can use two additional digits for alpha (transparency) in the format `#RRGGBBAA`.
+- RGB: `rgb(R, G, B)` where R, G, and B are integers between 0 and 255 representing the red, green, and blue components of the color. We can also use `rgba(R, G, B, A)` where A is a number between 0 and 1 representing the alpha (transparency) component.
+  Or use 'rgb(R G B / A)' where R, G, and B are integers between 0 and 255 representing the red, green, and blue components of the color, and A is a number between 0 and 1 representing the alpha (transparency) component.
+- HSL: `hsl(H, S\%, L\%)` where H is an integer between 0 and 360 representing the hue, S is a percentage representing the saturation, and L is a percentage representing the lightness. We can also use `hsla(H, S\%, L\%, A)` where A is a number between 0 and 1 representing the alpha (transparency) component.
+- oklch: `oklch(L C H)` where L is a number between 0 and 1 representing the lightness, C is a number representing the chroma, and H is an integer between 0 and 360 representing the hue. We can also use `oklch(L C H / A)` where A is a number between 0 and 1 representing the alpha (transparency) component. 
+
+## Special values
+### iherit
+The `inherit` value allows an element to inherit a property value from its parent element.
+### initial
+The `initial` value resets a property to its default value as defined in the CSS specification.
+### unset
+The `unset` value resets a property to its inherited value if it inherits from its parent, or to its initial value if it does not inherit.
+### revert
+The `revert` value resets a property to the value established by the user-agent stylesheet
+
+
+## Pseudo-classes
+### hover
+The `:hover` pseudo-class applies when the user designates an element with a pointing device, but does not activate it. 
+For example, when the mouse pointer is over an element, the `:hover` pseudo-class can be used to change some attributes of the element, such as its background color or text color.
+
+## Important Things
+### border vs. outline
+The `border` property adds a border around an element, while the `outline` property adds a line around an element that does not take up space and does not affect the layout of the page. 
+The `outline` is often used for accessibility purposes, such as indicating focus on interactive elements.
