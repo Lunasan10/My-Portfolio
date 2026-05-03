@@ -26,6 +26,32 @@ The `revert` value resets a property to the value established by the user-agent 
 The `:hover` pseudo-class applies when the user designates an element with a pointing device, but does not activate it. 
 For example, when the mouse pointer is over an element, the `:hover` pseudo-class can be used to change some attributes of the element, such as its background color or text color.
 
+### active
+The `:active` pseudo-class applies when an element is being activated by the user.
+For example, when a user clicks on a button, the `:active` pseudo-class can be used to change the appearance of the button while it is being clicked.
+
+### focus
+The `:focus` pseudo-class applies when an element has received focus, either from the user selecting it with the mouse or by navigating to it using the keyboard.
+For example, when a user clicks on an input field or navigates to it using the keyboard, the `:focus` pseudo-class can be used to change the appearance of the input field to indicate that it is active and ready for user input.
+
+### focus-visible
+The `:focus-visible` pseudo-class applies when an element has received focus and the user agent determines that it should be visibly focused.
+
+### focus-within
+The `:focus-within` pseudo-class applies to an element if it or any of its descendants are focused.
+This is useful for styling parent elements when any of their child elements receive focus, such as highlighting a form group when an input field within it is focused.
+
+### target
+The `:target` pseudo-class applies to an element that is the target of a fragment identifier in the URL.
+For example, if the URL is `http://example.com/page#section1`, the element with the id `section1` will match the `:target` pseudo-class, allowing you to style it differently when it is the target of the URL.
+
+### first-child
+The `:first-child` pseudo-class applies to an element that is the first child of its parent.
+
+### last-child
+The `:last-child` pseudo-class applies to an element that is the last child of its parent.
+
+
 ## Important Things
 ### border vs. outline
 The `border` property adds a border around an element, while the `outline` property adds a line around an element that does not take up space and does not affect the layout of the page. 
